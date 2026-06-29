@@ -1,0 +1,209 @@
+{
+  "id": "laos-vlog",
+  "heading": "琅勃拉邦行旅图",
+  "kicker": "老挝 vlog · 三城漫游 · 可叙事地图",
+  "subtitle": "Day 1 古城 · Day 2 万荣户外 · Day 3 万象 — 把琅勃拉邦镜头落回山川与湄公河",
+  "seal": "老",
+  "searchPlaceholder": "搜地名、vlog 分 P、解说词",
+  "types": {
+    "morning": {
+      "label": "晨间",
+      "color": "#d4a017"
+    },
+    "noon": {
+      "label": "午后",
+      "color": "#c45a1f"
+    },
+    "dusk": {
+      "label": "黄昏",
+      "color": "#7a3b1a"
+    },
+    "night": {
+      "label": "夜市",
+      "color": "#1f4f6f"
+    },
+    "outdoor": {
+      "label": "户外",
+      "color": "#2d6a4f"
+    },
+    "heritage": {
+      "label": "古迹",
+      "color": "#8f5d14"
+    }
+  },
+  "bounds": [
+    [
+      100,
+      14
+    ],
+    [
+      108,
+      21
+    ]
+  ],
+  "points": [
+    {
+      "id": "lp-luang-prabang-old-town",
+      "name": "琅勃拉邦古城",
+      "short": "古城",
+      "days": "Day 1",
+      "type": "heritage",
+      "lnglat": [
+        102.1332,
+        19.8846
+      ],
+      "summary": "清晨布施队伍穿过 Phommatha 路，光西木尼寺的金顶在湄公河雾气里亮起来。",
+      "quote": "Sabaidei，琅勃拉邦的早晨从一碗糯米开始。",
+      "vlog_clip": "vlog-day1-morning",
+      "video_clip": "BV1xxxxxx?t=12",
+      "importance": 5,
+      "works": [
+        "vlog-day1-morning",
+        "Day 1"
+      ],
+      "years": "Day 1"
+    },
+    {
+      "id": "lp-mount-phousi",
+      "name": "普西山",
+      "short": "普西山",
+      "days": "Day 1",
+      "type": "morning",
+      "lnglat": [
+        102.1373,
+        19.8881
+      ],
+      "summary": "328 级台阶登顶，俯瞰湄公河与南康江交汇的半岛。日落时分金光斜照屋瓦。",
+      "quote": "站在山顶，琅勃拉邦像一片被河水抱住的琥珀。",
+      "vlog_clip": "vlog-day1-dusk",
+      "importance": 4,
+      "works": [
+        "vlog-day1-dusk",
+        "Day 1"
+      ],
+      "years": "Day 1"
+    },
+    {
+      "id": "lp-kuangsi-falls",
+      "name": "光西瀑布",
+      "short": "光西瀑布",
+      "days": "Day 1",
+      "type": "outdoor",
+      "lnglat": [
+        101.9028,
+        19.7492
+      ],
+      "summary": "城外 30km，钙华池一层一层蓝下来。当地人说夏天最深的水潭有 60m，能跳水。",
+      "quote": "钙华池的蓝分好几层，最浅的奶白，最深的翡翠。",
+      "vlog_clip": "vlog-day1-noon",
+      "importance": 4,
+      "works": [
+        "vlog-day1-noon",
+        "Day 1"
+      ],
+      "years": "Day 1"
+    },
+    {
+      "id": "vr-vang-vieng",
+      "name": "万荣",
+      "short": "万荣",
+      "days": "Day 2",
+      "type": "outdoor",
+      "lnglat": [
+        102.4478,
+        18.9333
+      ],
+      "summary": "喀斯特峰林从稻田里拔起，轮胎漂流、洞穴探洞、攀岩、皮划艇 — 老挝的户外大本营。",
+      "quote": "万荣的山像桂林，但人少十倍，节奏慢两拍。",
+      "vlog_clip": "vlog-day2-outdoor",
+      "video_clip": "BV1xxxxxx?t=1420",
+      "importance": 5,
+      "works": [
+        "vlog-day2-outdoor",
+        "Day 2"
+      ],
+      "years": "Day 2"
+    },
+    {
+      "id": "vr-nam-song-river",
+      "name": "南松河",
+      "short": "南松河",
+      "days": "Day 2",
+      "type": "outdoor",
+      "lnglat": [
+        102.4422,
+        18.9294
+      ],
+      "summary": "午后在轮胎里漂下来，两岸是 ban 村和水牛。岸边的 bar 挂着秋千和绳索。",
+      "quote": "南松河漂流不是看风景，是成为风景的一部分。",
+      "vlog_clip": "vlog-day2-noon",
+      "importance": 4,
+      "works": [
+        "vlog-day2-noon",
+        "Day 2"
+      ],
+      "years": "Day 2"
+    },
+    {
+      "id": "vi-pakse-bolaven",
+      "name": "波罗芬高原咖啡园",
+      "short": "波罗芬",
+      "days": "Day 3",
+      "type": "morning",
+      "lnglat": [
+        105.8194,
+        15.12
+      ],
+      "summary": "南边波罗芬高原，海拔 1000-1500m，阿拉比卡咖啡带。Day 3 启程南下路过。",
+      "quote": "波罗芬的咖啡有红土和巧克力的余韵。",
+      "vlog_clip": "vlog-day3-morning",
+      "importance": 3,
+      "works": [
+        "vlog-day3-morning",
+        "Day 3"
+      ],
+      "years": "Day 3"
+    },
+    {
+      "id": "vt-vientiane-that-luang",
+      "name": "万象塔銮",
+      "short": "塔銮",
+      "days": "Day 3",
+      "type": "heritage",
+      "lnglat": [
+        102.6333,
+        17.9583
+      ],
+      "summary": "老挝的国家象征，1566 年塞塔提腊国王建，金色塔身 45m，四周围廊供佛。",
+      "quote": "塔銮的白天和夜景完全两个国家。",
+      "vlog_clip": "vlog-day3-dusk",
+      "importance": 5,
+      "works": [
+        "vlog-day3-dusk",
+        "Day 3"
+      ],
+      "years": "Day 3"
+    },
+    {
+      "id": "vt-vientiane-night-market",
+      "name": "万象夜市",
+      "short": "夜市",
+      "days": "Day 3",
+      "type": "night",
+      "lnglat": [
+        102.629,
+        17.965
+      ],
+      "summary": "湄公河边的夜市，围巾、灯笼、烤鱼、奥尔良鸡翅 — 老挝的烟火气都堆在这儿。",
+      "quote": "万象夜市的烤鱼配糯米饭，是这趟旅行的收尾仪式。",
+      "vlog_clip": "vlog-day3-night",
+      "importance": 4,
+      "works": [
+        "vlog-day3-night",
+        "Day 3"
+      ],
+      "years": "Day 3"
+    }
+  ],
+  "default": "laos-vlog"
+}

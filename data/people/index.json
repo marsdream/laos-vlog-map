@@ -1,0 +1,37 @@
+{
+  "default": "laos-vlog",
+  "people": [
+    {
+      "id": "laos-vlog",
+      "label": "老挝",
+      "name": "琅勃拉邦行旅",
+      "era": "vlog 2026",
+      "region": "老挝",
+      "path": "data/laos-journey.json"
+    },
+    {
+      "id": "sushi",
+      "label": "东坡",
+      "name": "苏轼",
+      "era": "北宋",
+      "region": "中国",
+      "path": "data/sushi-journey.json"
+    },
+    {
+      "id": "libai",
+      "label": "太白",
+      "name": "李白",
+      "era": "盛唐",
+      "region": "中国",
+      "path": "data/libai-journey.json"
+    },
+    {
+      "id": "genghis",
+      "label": "成吉思汗",
+      "name": "铁木真",
+      "era": "蒙古帝国",
+      "region": "欧亚",
+      "path": "data/genghis-journey.json"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>琅勃拉邦行旅图 | vlog 叙事地图</title>
+  <meta name="description" content="老挝三城 vlog 漫游地图 — Day 1 古城、Day 2 万荣户外、Day 3 万象。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <main id="app">
+    <div id="map" aria-label="琅勃拉邦 vlog 地图"></div>
+    <div class="paper"></div>
+    <div class="vignette"></div>
+    <canvas id="mist"></canvas>
+
+    <header class="titlebar">
+      <p id="titleKicker">老挝 vlog · 三城漫游 · 可叙事地图</p>
+      <h1 id="titleHeading">琅勃拉邦行旅图</h1>
+      <p id="titleSubtitle">Day 1 古城 · Day 2 万荣户外 · Day 3 万象 — 把 vlog 镜头落回山川与湄公河</p>
+    </header>
+
+    <section class="search" aria-label="选择 vlog 章节并搜索地点">
+      <div class="person-field">
+        <label for="personSelect">章节</label>
+        <select id="personSelect" aria-label="选择 vlog"></select>
+      </div>
+      <label for="searchInput">搜地点 / 解说词</label>
+      <div class="search-box">
+        <input id="searchInput" type="search" autocomplete="off" placeholder="古城、光西瀑布、万荣、塔銮">
+        <button id="searchClear" type="button" aria-label="清空搜索">清</button>
+      </div>
+      <div id="searchResults" class="search-results" hidden></div>
+    </section>
+
+    <aside class="story" aria-live="polite">
+      <div class="story-head">
+        <span id="storyYears">Day 1-3</span>
+        <strong id="storyTitle">老挝三城 vlog 节点</strong>
+      </div>
+      <p id="storyText">点击地图上的竖牌，查看地点、vlog 分 P 与镜头时刻；也可以用下方按钮切换前后节点。</p>
+      <div id="storyWorks" class="works"></div>
+      <blockquote id="storyQuote">Sabaidei，琅勃拉邦的早晨从一碗糯米开始。</blockquote>
+      <button id="poemOpen" class="poem-open" type="button">查看 vlog 分 P</button>
+      <div class="progress">
+        <span id="progressText">第 1 / 8 站</span>
+        <i><b id="progressBar"></b></i>
+      </div>
+      <div class="story-actions">
+        <button id="prevBtn" type="button">上一站</button>
+        <button id="nextBtn" type="button">下一站</button>
+      </div>
+    </aside>
+
+    <ol id="timeline" class="timeline" aria-label="vlog 时间线"></ol>
+
+    <section id="poemModal" class="poem-modal" aria-labelledby="poemTitle" aria-modal="true" role="dialog" hidden>
+      <button id="poemBackdrop" class="poem-backdrop" type="button" aria-label="关闭 vlog 弹窗"></button>
+      <article class="poem-sheet">
+        <button id="poemClose" class="poem-close" type="button" aria-label="关闭">×</button>
+        <p id="poemAuthor" class="poem-author"></p>
+        <h2 id="poemTitle"></h2>
+        <div id="poemBody" class="poem-body"></div>
+      </article>
+    </section>
+
+    <div id="loader" class="loader">
+      <div>
+        <strong>铺开湄公河画卷</strong>
+        <span>正在载入边界、水系与琅勃拉邦行旅节点（POI 试跑版）</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="vendor/maplibre-gl.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

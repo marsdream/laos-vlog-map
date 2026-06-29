@@ -1,0 +1,229 @@
+{
+  "id": "libai",
+  "title": "太白行迹",
+  "heading": "太白行迹图",
+  "kicker": "真实山河 · 盛唐诗路 · 可漫游叙事地图",
+  "subtitle": "从青莲到当涂，把李白的漫游、入京与放还落回山川江河",
+  "seal": "李",
+  "searchPlaceholder": "长安、庐山、夜郎、将进酒",
+  "loaderText": "正在载入中国边界、水系与太白行迹节点",
+  "types": {
+    "origin": {
+      "label": "蜀中",
+      "color": "#286b63"
+    },
+    "roam": {
+      "label": "漫游",
+      "color": "#8f5d14"
+    },
+    "capital": {
+      "label": "入京",
+      "color": "#a63a22"
+    },
+    "exile": {
+      "label": "放还",
+      "color": "#6f4d86"
+    },
+    "final": {
+      "label": "终老",
+      "color": "#7d3424"
+    }
+  },
+  "points": [
+    {
+      "id": "qinglian",
+      "name": "青莲",
+      "short": "青莲",
+      "years": "705-724",
+      "type": "origin",
+      "lnglat": [104.744, 31.778],
+      "summary": "李白少年时期主要在蜀中度过。地图以江油青莲区域作叙事锚点，标记他的诗性想象与山川经验的起点。",
+      "quote": "蜀道之难，难于上青天。",
+      "works": ["蜀道难"],
+      "poem": "蜀道难",
+      "importance": 5
+    },
+    {
+      "id": "emei",
+      "name": "峨眉",
+      "short": "峨眉",
+      "years": "724",
+      "type": "origin",
+      "lnglat": [103.484, 29.601],
+      "summary": "出蜀前后的峨眉山月，是李白早期诗歌里最清亮的山水意象之一。",
+      "quote": "峨眉山月半轮秋，影入平羌江水流。",
+      "works": ["峨眉山月歌"],
+      "poem": "峨眉山月歌",
+      "importance": 4
+    },
+    {
+      "id": "yuzhou",
+      "name": "渝州",
+      "short": "渝州",
+      "years": "724",
+      "type": "roam",
+      "lnglat": [106.551, 29.563],
+      "summary": "沿江东下，巴山蜀水转入更辽阔的江汉世界，青年李白的漫游由此展开。",
+      "quote": "夜发清溪向三峡，思君不见下渝州。",
+      "works": ["峨眉山月歌"],
+      "poem": "峨眉山月歌",
+      "importance": 4
+    },
+    {
+      "id": "jiangling",
+      "name": "江陵",
+      "short": "江陵",
+      "years": "725",
+      "type": "roam",
+      "lnglat": [112.239, 30.335],
+      "summary": "江陵扼守长江中游，是李白出蜀后进入楚地与江南的重要节点。",
+      "quote": "朝辞白帝彩云间，千里江陵一日还。",
+      "works": ["早发白帝城"],
+      "poem": "早发白帝城",
+      "importance": 4
+    },
+    {
+      "id": "jinling",
+      "name": "金陵",
+      "short": "金陵",
+      "years": "726",
+      "type": "roam",
+      "lnglat": [118.796, 32.06],
+      "summary": "金陵的江山形胜与六朝遗迹，成为李白反复书写的历史舞台。",
+      "quote": "三山半落青天外，二水中分白鹭洲。",
+      "works": ["登金陵凤凰台"],
+      "poem": "登金陵凤凰台",
+      "importance": 5
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "short": "扬州",
+      "years": "726",
+      "type": "roam",
+      "lnglat": [119.412, 32.394],
+      "summary": "扬州是盛唐东南繁华的象征，也连着李白与友人送别、漫游和酒意。",
+      "quote": "故人西辞黄鹤楼，烟花三月下扬州。",
+      "works": ["黄鹤楼送孟浩然之广陵"],
+      "poem": "黄鹤楼送孟浩然之广陵",
+      "importance": 4
+    },
+    {
+      "id": "anlu",
+      "name": "安陆",
+      "short": "安陆",
+      "years": "727-737",
+      "type": "roam",
+      "lnglat": [113.689, 31.256],
+      "summary": "李白曾长期寓居安陆一带，漫游、交游与求仕愿望在这里交织。",
+      "quote": "桃花流水窅然去，别有天地非人间。",
+      "works": ["山中问答"],
+      "poem": "山中问答",
+      "importance": 4
+    },
+    {
+      "id": "changan",
+      "name": "长安",
+      "short": "长安",
+      "years": "742-744",
+      "type": "capital",
+      "lnglat": [108.94, 34.341],
+      "summary": "奉诏入长安，供奉翰林。理想一度抵达帝国中心，也很快与政治现实发生错位。",
+      "quote": "云想衣裳花想容，春风拂槛露华浓。",
+      "works": ["清平调"],
+      "poem": "清平调·其一",
+      "importance": 5
+    },
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "short": "洛阳",
+      "years": "744",
+      "type": "roam",
+      "lnglat": [112.454, 34.619],
+      "summary": "离开长安后，李白在洛阳一带与杜甫相遇。唐诗史上最耀眼的交会之一由此展开。",
+      "quote": "醉月频中圣，迷花不事君。",
+      "works": ["赠孟浩然"],
+      "poem": "赠孟浩然",
+      "importance": 5
+    },
+    {
+      "id": "yanzhou",
+      "name": "兖州",
+      "short": "兖州",
+      "years": "745",
+      "type": "roam",
+      "lnglat": [116.828, 35.552],
+      "summary": "李白在齐鲁一带游历访友，山岳、酒与豪气继续扩展他的诗歌版图。",
+      "quote": "鲁酒不可醉，齐歌空复情。",
+      "works": ["沙丘城下寄杜甫"],
+      "poem": "沙丘城下寄杜甫",
+      "importance": 3
+    },
+    {
+      "id": "xuancheng",
+      "name": "宣城",
+      "short": "宣城",
+      "years": "753",
+      "type": "roam",
+      "lnglat": [118.759, 30.94],
+      "summary": "宣城、泾县一带保留了李白晚年江南漫游的浓厚痕迹，桃花潭的赠别也由此进入千古记忆。",
+      "quote": "桃花潭水深千尺，不及汪伦送我情。",
+      "works": ["赠汪伦"],
+      "poem": "赠汪伦",
+      "importance": 5
+    },
+    {
+      "id": "lushan",
+      "name": "庐山",
+      "short": "庐山",
+      "years": "755-757",
+      "type": "exile",
+      "lnglat": [115.982, 29.705],
+      "summary": "安史之乱后，李白在江淮与庐山之间卷入时代风暴。山水诗境与政治遭际在此重叠。",
+      "quote": "飞流直下三千尺，疑是银河落九天。",
+      "works": ["望庐山瀑布"],
+      "poem": "望庐山瀑布",
+      "importance": 5
+    },
+    {
+      "id": "yelang",
+      "name": "夜郎道",
+      "short": "夜郎",
+      "years": "757-759",
+      "type": "exile",
+      "lnglat": [106.825, 28.133],
+      "summary": "因永王事件获罪，李白被流放夜郎，途中遇赦。地图以黔北夜郎道作流放叙事锚点。",
+      "quote": "我寄愁心与明月，随君直到夜郎西。",
+      "works": ["闻王昌龄左迁龙标遥有此寄"],
+      "poem": "闻王昌龄左迁龙标遥有此寄",
+      "importance": 4
+    },
+    {
+      "id": "baidicheng",
+      "name": "白帝城",
+      "short": "白帝",
+      "years": "759",
+      "type": "exile",
+      "lnglat": [109.575, 31.045],
+      "summary": "遇赦东归，白帝城的朝霞与长江峡谷被写成最轻快的生命回声。",
+      "quote": "两岸猿声啼不住，轻舟已过万重山。",
+      "works": ["早发白帝城"],
+      "poem": "早发白帝城",
+      "importance": 5
+    },
+    {
+      "id": "dangtu",
+      "name": "当涂",
+      "short": "当涂",
+      "years": "762",
+      "type": "final",
+      "lnglat": [118.497, 31.571],
+      "summary": "李白晚年寓居当涂，并卒于此地。大鹏之志最终落在长江岸边，仍有余响。",
+      "quote": "大鹏飞兮振八裔，中天摧兮力不济。",
+      "works": ["临路歌"],
+      "poem": "临路歌",
+      "importance": 5
+    }
+  ]
+}

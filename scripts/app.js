@@ -8,6 +8,7 @@ const DEM_BOUNDS = [95, 25, 110, 13];
 
 let points = [];
 let markers = [];
+let hotelMarkers = [];
 let journeys = {};
 let peopleCatalog = [];
 let poems = {};
@@ -347,6 +348,21 @@ function addHotels(hotelData) {
       "text-halo-color": "#ffffff",
       "text-halo-width": 1
     }
+  });
+  
+  // 为每个住宿创建 marker 和点击交互
+  const hotels = hotelData.points;
+  hotels.forEach((hotel, index) => {
+    const el = document.createElement("div");
+    el.className = "hotel-marker";
+    el.innerHTML = `<div class="hotel-name">${hotel.name}</div><div class="hotel-price">${hotel.price}</div>`;
+    el.style.cursor = "pointer";
+    el.addEventListener("click", () => {
+      // 显示住宿详情
+      alert(`住宿详情:\n名称: ${hotel.name}\n价格: ${hotel.price}\n星级: ${hotel.star}\n地址: ${hotel.address || "暂无"}\n\n预订链接: ${hotel.detail_url || "暂无"}`);
+    });
+    const marker = new maplibregl.Marker({ element: el, anchor: "bottom" }).setLngLat(hotel.lnglat).addTo(map);
+    hotelMarkers.push({ hotel, marker, el });
   });
 }
 

@@ -1,0 +1,254 @@
+{
+  "id": "luang-prabang",
+  "heading": "琅勃拉邦行旅 · 老挝",
+  "kicker": "老挝 vlog · 三城漫游 · 可叙事地图",
+  "subtitle": "Day 1 古城 · 寺庙 · 瀑布 — 琅勃拉邦的世界遗产",
+  "seal": "老",
+  "searchPlaceholder": "搜琅勃拉邦行旅景点、vlog 分 P、寺庙名",
+  "types": {
+    "heritage": {
+      "label": "古迹",
+      "color": "#8f5d14"
+    },
+    "temple": {
+      "label": "寺庙",
+      "color": "#a02c1f"
+    },
+    "nature": {
+      "label": "自然",
+      "color": "#2d6a4f"
+    },
+    "outdoor": {
+      "label": "户外",
+      "color": "#1b8a4d"
+    },
+    "night": {
+      "label": "夜市",
+      "color": "#1f4f6f"
+    },
+    "morning": {
+      "label": "晨间",
+      "color": "#d4a017"
+    },
+    "museum": {
+      "label": "博物",
+      "color": "#5c2a6a"
+    },
+    "landmark": {
+      "label": "地标",
+      "color": "#7a3b1a"
+    }
+  },
+  "bounds": [
+    [
+      100,
+      14
+    ],
+    [
+      108,
+      22
+    ]
+  ],
+  "points": [
+    {
+      "id": "lp-wat-xieng-thong",
+      "name": "香通寺",
+      "en": "Wat Xieng Thong",
+      "short": "香通寺",
+      "city": "Luang Prabang",
+      "type": "temple",
+      "lnglat": [
+        102.14306,
+        19.8975
+      ],
+      "summary": "琅勃拉邦最负盛名的寺庙，1560 年塞塔提腊国王所建，金色屋顶低垂到地面，寺内藏有皇家灵车。联合国教科文组织世界遗产。",
+      "quote": "‘Temple of the Golden City’，琅勃拉邦的灵魂所在。",
+      "vlog_clip": "vlog-temple",
+      "video_clip": "BV1xxxxxx?t=320",
+      "importance": 5,
+      "poi_num": 1,
+      "poi_label": "景点1",
+      "years": "景点1",
+      "works": [
+        "temple"
+      ]
+    },
+    {
+      "id": "lp-phou-si",
+      "name": "普西山",
+      "en": "Mount Phou Si",
+      "short": "普西山",
+      "city": "Luang Prabang",
+      "type": "landmark",
+      "lnglat": [
+        102.13694,
+        19.89028
+      ],
+      "summary": "老城中心 100m 高的小山，328 级台阶登顶，俯瞰湄公河与南康江交汇。顶峰是金塔 Wat Chom Si，琅勃拉邦最经典日落点。",
+      "quote": "站在山顶，琅勃拉邦像一片被河水抱住的琥珀。",
+      "vlog_clip": "vlog-dusk",
+      "importance": 5,
+      "poi_num": 2,
+      "poi_label": "景点2",
+      "years": "景点2",
+      "works": [
+        "dusk"
+      ]
+    },
+    {
+      "id": "lp-royal-palace",
+      "name": "琅勃拉邦皇宫博物馆",
+      "en": "Royal Palace Museum",
+      "short": "皇宫博物",
+      "city": "Luang Prabang",
+      "type": "museum",
+      "lnglat": [
+        102.13611,
+        19.8865
+      ],
+      "summary": "1904 年西萨旺冯国王建的法式宫殿，1975 年革命后改作博物馆。Phra Bang 金佛、达摩法幢、皇室生活用品都在里面。",
+      "quote": "Phra Bang 金佛给了这座城市名字。",
+      "vlog_clip": "vlog-morning",
+      "importance": 4,
+      "poi_num": 3,
+      "poi_label": "景点3",
+      "years": "景点3",
+      "works": [
+        "morning"
+      ]
+    },
+    {
+      "id": "lp-taec",
+      "name": "传统艺术与民族中心",
+      "en": "TAEC",
+      "short": "TAEC",
+      "city": "Luang Prabang",
+      "type": "museum",
+      "lnglat": [
+        102.1345,
+        19.8868
+      ],
+      "summary": "前殖民时期法官官邸，展示老挝 20+ 个少数民族的服饰、器具与精神信仰。游客少，藏品精，半小时就能看完。",
+      "quote": "老挝不是只有 Lao Loum 这一个民族。",
+      "vlog_clip": "vlog-afternoon",
+      "importance": 3,
+      "poi_num": 4,
+      "poi_label": "景点4",
+      "years": "景点4",
+      "works": [
+        "afternoon"
+      ]
+    },
+    {
+      "id": "lp-phosi-market",
+      "name": "Phosi Market 早市",
+      "en": "Phosi Market",
+      "short": "Phosi 早市",
+      "city": "Luang Prabang",
+      "type": "morning",
+      "lnglat": [
+        102.1352,
+        19.8865
+      ],
+      "summary": "清晨 5:30 开门，Hmong 高山菜、湄公河鱼、酸笋、香料 — 老挝家常的源头。游客来买纪念品，本地人来买一周的口粮。",
+      "quote": "一碗 khao soi 配糯米饭，从这座早市开始。",
+      "vlog_clip": "vlog-morning",
+      "importance": 3,
+      "poi_num": 5,
+      "poi_label": "景点5",
+      "years": "景点5",
+      "works": [
+        "morning"
+      ]
+    },
+    {
+      "id": "lp-kuang-si",
+      "name": "光西瀑布",
+      "en": "Kuang Si Falls",
+      "short": "光西瀑布",
+      "city": "Luang Prabang",
+      "type": "nature",
+      "lnglat": [
+        101.9036,
+        19.7497
+      ],
+      "summary": "老城南 29km 的多层钙华瀑布，奶白到翡翠蓝层叠成池。公园里还住着 Free the Bears 救援中心救回来的 150+ 只月熊。",
+      "quote": "钙华池的蓝分好几层，最浅的奶白，最深的翡翠。",
+      "vlog_clip": "vlog-noon",
+      "video_clip": "BV1xxxxxx?t=1180",
+      "importance": 5,
+      "poi_num": 6,
+      "poi_label": "景点6",
+      "years": "景点6",
+      "works": [
+        "noon"
+      ]
+    },
+    {
+      "id": "lp-living-land",
+      "name": "Living Land 农场",
+      "en": "Living Land Farm",
+      "short": "Living Land",
+      "city": "Luang Prabang",
+      "type": "outdoor",
+      "lnglat": [
+        101.9528,
+        19.8115
+      ],
+      "summary": "去光西瀑布路上的社区农场，14 步把糯米从田里做到饭桌，包括用自家水牛踩田。最值得一上的老挝烹饪体验。",
+      "quote": "你从此再不会觉得糯米饭理所当然。",
+      "vlog_clip": "vlog-noon",
+      "importance": 3,
+      "poi_num": 7,
+      "poi_label": "景点7",
+      "years": "景点7",
+      "works": [
+        "noon"
+      ]
+    },
+    {
+      "id": "lp-pak-ou",
+      "name": "巴乌石窟",
+      "en": "Pak Ou Caves",
+      "short": "巴乌石窟",
+      "city": "Luang Prabang",
+      "type": "temple",
+      "lnglat": [
+        102.2105,
+        20.0487
+      ],
+      "summary": "湄公河与南乌河交汇处的石灰岩洞穴群，Tham Ting（下洞）和 Tham Theung（上洞）里藏有上千尊大小不一的木佛。乘慢船来回 4 小时。",
+      "quote": "上洞 Tham Theung 的佛像堆到看不清人脸。",
+      "vlog_clip": "vlog-afternoon",
+      "importance": 4,
+      "poi_num": 8,
+      "poi_label": "景点8",
+      "years": "景点8",
+      "works": [
+        "afternoon"
+      ]
+    },
+    {
+      "id": "lp-night-market",
+      "name": "琅勃拉邦夜市",
+      "en": "Luang Prabang Night Market",
+      "short": "LP 夜市",
+      "city": "Luang Prabang",
+      "type": "night",
+      "lnglat": [
+        102.1332,
+        19.8858
+      ],
+      "summary": "西萨旺冯大街上从 17:00 到 22:30 沿街摆摊，手工灯笼、苗银首饰、Hmong 刺绣围巾 — 不喊价、不还价，逛完不饿也难。",
+      "quote": "夜市的小 ka nom kok 椰奶小饼是隐藏彩蛋。",
+      "vlog_clip": "vlog-night",
+      "importance": 4,
+      "poi_num": 9,
+      "poi_label": "景点9",
+      "years": "景点9",
+      "works": [
+        "night"
+      ]
+    }
+  ]
+}

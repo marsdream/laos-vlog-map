@@ -1,0 +1,143 @@
+{
+  "id": "vang-vieng",
+  "heading": "万荣行旅 · 老挝",
+  "kicker": "老挝 vlog · 三城漫游 · 可叙事地图",
+  "subtitle": "Day 2 户外 · 溶洞 · 漂流 — 万荣的喀斯特风光",
+  "seal": "老",
+  "searchPlaceholder": "搜万荣行旅景点、vlog 分 P、寺庙名",
+  "types": {
+    "heritage": {
+      "label": "古迹",
+      "color": "#8f5d14"
+    },
+    "temple": {
+      "label": "寺庙",
+      "color": "#a02c1f"
+    },
+    "nature": {
+      "label": "自然",
+      "color": "#2d6a4f"
+    },
+    "outdoor": {
+      "label": "户外",
+      "color": "#1b8a4d"
+    },
+    "night": {
+      "label": "夜市",
+      "color": "#1f4f6f"
+    },
+    "morning": {
+      "label": "晨间",
+      "color": "#d4a017"
+    },
+    "museum": {
+      "label": "博物",
+      "color": "#5c2a6a"
+    },
+    "landmark": {
+      "label": "地标",
+      "color": "#7a3b1a"
+    }
+  },
+  "bounds": [
+    [
+      100,
+      14
+    ],
+    [
+      108,
+      22
+    ]
+  ],
+  "points": [
+    {
+      "id": "vv-tham-chang",
+      "name": "长廊石窟",
+      "en": "Tham Chang Cave",
+      "short": "长廊石窟",
+      "city": "Vang Vieng",
+      "type": "temple",
+      "lnglat": [
+        102.4456,
+        18.9347
+      ],
+      "summary": "万荣镇南石灰岩山里的溶洞，洞内钟乳石、石笋、地下河，19 世纪曾是苗族难民的庇护所。爬上山有个蓝色天然泳池。",
+      "quote": "长廊石窟是万荣看喀斯特地貌最便宜的窗口。",
+      "vlog_clip": "vlog-morning",
+      "importance": 4,
+      "poi_num": 1,
+      "poi_label": "景点1",
+      "years": "景点10",
+      "works": [
+        "morning"
+      ]
+    },
+    {
+      "id": "vv-blue-lagoon",
+      "name": "蓝泻湖 1 号",
+      "en": "Blue Lagoon 1",
+      "short": "蓝泻湖",
+      "city": "Vang Vieng",
+      "type": "outdoor",
+      "lnglat": [
+        102.4525,
+        18.9133
+      ],
+      "summary": "万荣西郊 7km 的碧蓝水潭，从树顶跳水绳跳下去是标配。岸边的 bar 卖 Beerlao 和香蕉煎饼。下午 4 点后光最好。",
+      "quote": "蓝泻湖的颜色来自石灰岩水底，不是滤镜。",
+      "vlog_clip": "vlog-noon",
+      "video_clip": "BV1xxxxxx?t=1620",
+      "importance": 5,
+      "poi_num": 2,
+      "poi_label": "景点2",
+      "years": "景点11",
+      "works": [
+        "noon"
+      ]
+    },
+    {
+      "id": "vv-pha-ngern",
+      "name": "Pha Ngern 观景台",
+      "en": "Pha Ngern Viewpoint",
+      "short": "Pha Ngern",
+      "city": "Vang Vieng",
+      "type": "landmark",
+      "lnglat": [
+        102.463,
+        18.952
+      ],
+      "summary": "万荣北郊 5km 的悬崖观景台，能俯瞰整片喀斯特峰林与南松河 U 形弯。日落前 1 小时上来，光线最干净。",
+      "quote": "万荣的山像桂林，但人少十倍，节奏慢两拍。",
+      "vlog_clip": "vlog-dusk",
+      "importance": 4,
+      "poi_num": 3,
+      "poi_label": "景点3",
+      "years": "景点12",
+      "works": [
+        "dusk"
+      ]
+    },
+    {
+      "id": "vv-nam-song",
+      "name": "南松河",
+      "en": "Nam Song River",
+      "short": "南松河",
+      "city": "Vang Vieng",
+      "type": "outdoor",
+      "lnglat": [
+        102.30167,
+        18.645
+      ],
+      "summary": "万荣的母亲河，从北向南流过喀斯特峰林，岸边的 ban 村和水牛是漂流时的固定景。租个内胎漂 3km 是经典。",
+      "quote": "南松河漂流不是看风景，是成为风景的一部分。",
+      "vlog_clip": "vlog-noon",
+      "importance": 4,
+      "poi_num": 4,
+      "poi_label": "景点4",
+      "years": "景点13",
+      "works": [
+        "noon"
+      ]
+    }
+  ]
+}

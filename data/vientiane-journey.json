@@ -1,0 +1,208 @@
+{
+  "id": "vientiane",
+  "heading": "万象行旅 · 老挝",
+  "kicker": "老挝 vlog · 三城漫游 · 可叙事地图",
+  "subtitle": "Day 3 地标 · 寺庙 · 夜市 — 万象的国家象征",
+  "seal": "老",
+  "searchPlaceholder": "搜万象行旅景点、vlog 分 P、寺庙名",
+  "types": {
+    "heritage": {
+      "label": "古迹",
+      "color": "#8f5d14"
+    },
+    "temple": {
+      "label": "寺庙",
+      "color": "#a02c1f"
+    },
+    "nature": {
+      "label": "自然",
+      "color": "#2d6a4f"
+    },
+    "outdoor": {
+      "label": "户外",
+      "color": "#1b8a4d"
+    },
+    "night": {
+      "label": "夜市",
+      "color": "#1f4f6f"
+    },
+    "morning": {
+      "label": "晨间",
+      "color": "#d4a017"
+    },
+    "museum": {
+      "label": "博物",
+      "color": "#5c2a6a"
+    },
+    "landmark": {
+      "label": "地标",
+      "color": "#7a3b1a"
+    }
+  },
+  "bounds": [
+    [
+      100,
+      14
+    ],
+    [
+      108,
+      22
+    ]
+  ],
+  "points": [
+    {
+      "id": "vt-pha-that-luang",
+      "name": "塔銮",
+      "en": "Pha That Luang",
+      "short": "塔銮",
+      "city": "Vientiane",
+      "type": "temple",
+      "lnglat": [
+        102.63425,
+        17.97617
+      ],
+      "summary": "万象的国家象征，1566 年塞塔提腊国王建，金色塔身 45m 收于 30m 方形基座，四周围廊供佛。每年 11 月 That Luang Festival 是老挝新年。",
+      "quote": "塔銮的白天金光、夜里打灯，完全两个国家。",
+      "vlog_clip": "vlog-afternoon",
+      "importance": 5,
+      "poi_num": 1,
+      "poi_label": "景点1",
+      "years": "景点14",
+      "works": [
+        "afternoon"
+      ]
+    },
+    {
+      "id": "vt-patuxai",
+      "name": "凯旋门",
+      "en": "Patuxai",
+      "short": "凯旋门",
+      "city": "Vientiane",
+      "type": "landmark",
+      "lnglat": [
+        102.61861,
+        17.97056
+      ],
+      "summary": "1962 年完工的老挝版凯旋门，模仿巴黎凯旋门但塔顶是老挝塔尖，墙面是佛教浮雕。登顶看万象天际线比吴哥窟塔顶便宜。",
+      "quote": "‘垂直的 LAN XANG’，老挝自己的凯旋门。",
+      "vlog_clip": "vlog-morning",
+      "importance": 4,
+      "poi_num": 2,
+      "poi_label": "景点2",
+      "years": "景点15",
+      "works": [
+        "morning"
+      ]
+    },
+    {
+      "id": "vt-wat-si-saket",
+      "name": "西刹吉寺",
+      "en": "Wat Si Saket",
+      "short": "西刹吉寺",
+      "city": "Vientiane",
+      "type": "temple",
+      "lnglat": [
+        102.61167,
+        17.96306
+      ],
+      "summary": "万象最古老的寺庙（1818 年），回廊内嵌数千尊大小佛像，墙面是僧侣讲法的浮雕。是 1828 年战火里少数没被毁的老庙。",
+      "quote": "回廊里的 12000 尊佛像，每一尊都有自己的故事。",
+      "vlog_clip": "vlog-morning",
+      "importance": 4,
+      "poi_num": 3,
+      "poi_label": "景点3",
+      "years": "景点16",
+      "works": [
+        "morning"
+      ]
+    },
+    {
+      "id": "vt-haw-phra-kaew",
+      "name": "玉佛寺",
+      "en": "Haw Phra Kaew",
+      "short": "玉佛寺",
+      "city": "Vientiane",
+      "type": "museum",
+      "lnglat": [
+        102.61167,
+        17.96139
+      ],
+      "summary": "1565 年塞塔提腊王为供奉从清迈抢来的玉佛所建，玉佛 1779 年搬到曼谷后改作博物馆。Lao art 与 Khmer 雕塑的精华。",
+      "quote": "玉佛不在这里，但佛像 200 年的历史还在。",
+      "vlog_clip": "vlog-afternoon",
+      "importance": 3,
+      "poi_num": 4,
+      "poi_label": "景点4",
+      "years": "景点17",
+      "works": [
+        "afternoon"
+      ]
+    },
+    {
+      "id": "vt-buddha-park",
+      "name": "佛像公园 (Xieng Khuan)",
+      "en": "Buddha Park",
+      "short": "佛像公园",
+      "city": "Vientiane",
+      "type": "landmark",
+      "lnglat": [
+        102.77694,
+        18.22722
+      ],
+      "summary": "万象东南 25km 湄公河畔的雕塑公园，1958 年老挝精神病人 Bunleua Sulilat 造，200+ 座水泥佛教 + 印度教神像混搭，阴间地狱到天堂。",
+      "quote": "阴间三层、地狱洞、佛头塔 — 不像公园，像万象版《山海经》。",
+      "vlog_clip": "vlog-afternoon",
+      "importance": 4,
+      "poi_num": 5,
+      "poi_label": "景点5",
+      "years": "景点18",
+      "works": [
+        "afternoon"
+      ]
+    },
+    {
+      "id": "vt-cope",
+      "name": "COPE 访客中心",
+      "en": "COPE Visitor Centre",
+      "short": "COPE 中心",
+      "city": "Vientiane",
+      "type": "museum",
+      "lnglat": [
+        102.6154,
+        17.9623
+      ],
+      "summary": "老挝未爆弹药致残的康复中心+博物馆，展出集束炸弹 UXO 实物、受害者假肢、扫雷犬 demo。30 分钟，最有意义的'博物馆'。",
+      "quote": "老挝人均被炸量是世界上最高的，1964-1973 美国投下 2.7 亿枚集束炸弹。",
+      "vlog_clip": "vlog-morning",
+      "importance": 4,
+      "poi_num": 6,
+      "poi_label": "景点6",
+      "years": "景点19",
+      "works": [
+        "morning"
+      ]
+    },
+    {
+      "id": "vt-night-market",
+      "name": "万象夜市",
+      "en": "Vientiane Night Market",
+      "short": "万象夜市",
+      "city": "Vientiane",
+      "type": "night",
+      "lnglat": [
+        102.6292,
+        17.9658
+      ],
+      "summary": "湄公河边沿河大道的夜市，比琅勃拉邦夜市更大、更本地，烤鱼、烤鸡、奥尔良鸡翅、Beerlao 配糯米饭 — 老挝烟火气全堆在这儿。",
+      "quote": "万象夜市的烤鱼配糯米饭，是这趟旅行的收尾仪式。",
+      "vlog_clip": "vlog-night",
+      "importance": 4,
+      "poi_num": 7,
+      "poi_label": "景点7",
+      "years": "景点20",
+      "works": [
+        "night"
+      ]
+    }
+  ]
+}

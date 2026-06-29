@@ -1,13 +1,29 @@
 {
-  "default": "laos-vlog",
+  "default": "luang-prabang",
   "people": [
     {
-      "id": "laos-vlog",
-      "label": "老挝",
+      "id": "luang-prabang",
+      "label": "琅勃拉邦行旅",
       "name": "琅勃拉邦行旅",
       "era": "vlog 2026",
       "region": "老挝",
-      "path": "data/laos-journey.json"
+      "path": "data/luang-prabang-journey.json"
+    },
+    {
+      "id": "vang-vieng",
+      "label": "万荣行旅",
+      "name": "万荣行旅",
+      "era": "vlog 2026",
+      "region": "老挝",
+      "path": "data/vang-vieng-journey.json"
+    },
+    {
+      "id": "vientiane",
+      "label": "万象行旅",
+      "name": "万象行旅",
+      "era": "vlog 2026",
+      "region": "老挝",
+      "path": "data/vientiane-journey.json"
     },
     {
       "id": "sushi",

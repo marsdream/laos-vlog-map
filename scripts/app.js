@@ -633,5 +633,7 @@ map.on("load", async () => {
   } catch (error) {
     document.querySelector("#loader strong").textContent = "载入失败";
     document.querySelector("#loader span").textContent = error.message;
+    console.error("[laos-vlog-map] init error:", error);
+    console.error("[laos-vlog-map] stack:", error.stack);
   }
 });

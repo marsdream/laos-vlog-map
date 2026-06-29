@@ -224,7 +224,7 @@ function addMask(outline) {
 function addWater(rivers, lakes) {
   map.addSource("rivers", { type: "geojson", data: rivers });
   map.addSource("lakes", { type: "geojson", data: lakes });
-  const before = map.getLayer("mask") ? "mask" : "prov-line";
+  const before = map.getLayer("mask") ? "mask" : "country-line";
   map.addLayer({
     id: "lakes",
     type: "fill",
@@ -277,7 +277,7 @@ function addTerrainSources() {
       "hillshade-accent-color": "#8a6a3f",
       "hillshade-exaggeration": 0.18
     }
-  }, "prov-line");
+  }, "country-line");
 }
 
 function makeRoute() {

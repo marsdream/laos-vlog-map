@@ -1,10 +1,10 @@
 const DEFAULT_BOUNDS = [[97, 20.5], [123, 45]];
 const HOME_PADDING = { top: 96, bottom: 96, left: 42, right: 42 };
-const REGIONAL_RELIEF_TILE_BOUNDS = [56.25, 16.63619, 140.625, 55.77657];
+const REGIONAL_RELIEF_TILE_BOUNDS = [95.0, 25.0, 110.0, 13.0];
 const RELIEF_VERSION = "20260629-genghis";
 const RELIEF_TILES = `tiles/relief/{z}/{x}/{y}.webp?v=${RELIEF_VERSION}`;
 const DEM_TILES = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png";
-const DEM_BOUNDS = [73, 17, 135, 54];
+const DEM_BOUNDS = [95, 25, 110, 13];
 
 let points = [];
 let markers = [];
@@ -125,53 +125,72 @@ function addReliefTiles() {
 }
 
 function addChinaLayers(china) {
+  // 中南半岛适配：china 现在包含 6 国 (老挝/中国/越南/泰国/缅甸/柬埔寨)
   map.addSource("china", { type: "geojson", data: china });
+  // 把所有 feature 合并为一个 MultiPolygon，让 fill 只在中南半岛区域
+  const mergedPolygon = {
+    type: "Feature",
+    properties: {},
+    geometry: { type: "MultiPolygon", coordinates: china.features.flatMap(f =>
+      f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates]
+    ) }
+  };
+  map.addSource("lands", { type: "geojson", data: mergedPolygon });
+  // 底色 fill 只在陆地上（relief-base 改为 lands source + fill-rule: evenodd）
   map.addLayer({
     id: "relief-base",
     type: "fill",
-    source: "china",
+    source: "lands",
     paint: { "fill-color": "#aebd8a", "fill-opacity": 1 }
   }, "relief-global-img");
+  // prov-fill (浅米色罩) 同样只覆盖陆地
   map.addLayer({
     id: "prov-fill",
     type: "fill",
-    source: "china",
+    source: "lands",
     paint: {
       "fill-color": "#e8d2a8",
-      "fill-opacity": 0.14
+      "fill-opacity": 0.10
     }
   });
-  map.addLayer({
-    id: "prov-line",
-    type: "line",
-    source: "china",
-    paint: { "line-color": "#a98e5f", "line-width": 0.75, "line-opacity": 0.72 }
-  });
+  // 国境线（6 国都画）
   map.addLayer({
     id: "country-line",
     type: "line",
-    source: "china",
-    paint: { "line-color": "#7c5b31", "line-width": 1.9, "line-opacity": 0.66 }
+    source: "lands",
+    paint: { "line-color": "#7c5b31", "line-width": 1.9, "line-opacity": 0.78 }
   });
 
+  // 国家名 label（中心点）
+  const countryLabels = {
+    "Laos": [102.5, 18.5],
+    "Thailand": [101.0, 15.5],
+    "Vietnam": [107.5, 14.0],
+    "Cambodia": [104.5, 12.5],
+    "Myanmar": [98.0, 19.5],
+    "China": [104.0, 22.0]
+  };
   china.features.forEach((feature) => {
-    const center = feature.properties && (feature.properties.center || feature.properties.centroid);
+    const name = feature.properties.name;
+    const center = countryLabels[name];
     if (!center) return;
     const el = document.createElement("div");
     el.className = "province-label";
-    el.textContent = feature.properties.name.replace(/(维吾尔|壮族|回族)?自治区|特别行政区|省|市/g, "");
+    el.textContent = name;
     Object.assign(el.style, {
       color: "#7d6536",
-      font: "600 12px Kaiti SC, STKaiti, KaiTi, serif",
-      letterSpacing: "2px",
+      font: "600 13px Kaiti SC, STKaiti, KaiTi, serif",
+      letterSpacing: "3px",
       pointerEvents: "none",
-      opacity: ".72"
+      opacity: ".55"
     });
     new maplibregl.Marker({ element: el }).setLngLat(center).addTo(map);
   });
 }
 
 function addMask(outline) {
+  // outline 仍然是 6 国（land-borders）。让它反向遮罩：海洋（=地球 - 6 国）画纸色
+  // 全地球 + 6 国 holes → fill-rule nonzero：地球(1) 内 → 6 国(2) 外 → 海洋填纸色
   const holes = [];
   outline.features.forEach((feature) => {
     const geometry = feature.geometry;
@@ -199,7 +218,7 @@ function addMask(outline) {
       "fill-color": "#ece1c6",
       "fill-opacity": ["interpolate", ["linear"], ["zoom"], 2.4, .42, 4, .22, 5.2, .06, 6, 0]
     }
-  }, "prov-line");
+  }, "country-line");
 }
 
 function addWater(rivers, lakes) {

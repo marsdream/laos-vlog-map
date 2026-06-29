@@ -2,208 +2,303 @@
   "id": "laos-vlog",
   "heading": "琅勃拉邦行旅图",
   "kicker": "老挝 vlog · 三城漫游 · 可叙事地图",
-  "subtitle": "Day 1 古城 · Day 2 万荣户外 · Day 3 万象 — 把琅勃拉邦镜头落回山川与湄公河",
+  "subtitle": "Day 1 古城 · Day 2 万荣户外 · Day 3 万象 — 把 vlog 镜头落回山川与湄公河",
   "seal": "老",
-  "searchPlaceholder": "搜地名、vlog 分 P、解说词",
+  "searchPlaceholder": "搜景点、vlog 分 P、寺庙名",
   "types": {
-    "morning": {
-      "label": "晨间",
-      "color": "#d4a017"
-    },
-    "noon": {
-      "label": "午后",
-      "color": "#c45a1f"
-    },
-    "dusk": {
-      "label": "黄昏",
-      "color": "#7a3b1a"
-    },
-    "night": {
-      "label": "夜市",
-      "color": "#1f4f6f"
-    },
-    "outdoor": {
-      "label": "户外",
-      "color": "#2d6a4f"
-    },
-    "heritage": {
-      "label": "古迹",
-      "color": "#8f5d14"
-    }
+    "heritage":  {"label": "古迹", "color": "#8f5d14"},
+    "temple":    {"label": "寺庙", "color": "#a02c1f"},
+    "nature":    {"label": "自然", "color": "#2d6a4f"},
+    "outdoor":   {"label": "户外", "color": "#1b8a4d"},
+    "night":     {"label": "夜市", "color": "#1f4f6f"},
+    "morning":   {"label": "晨间", "color": "#d4a017"},
+    "museum":    {"label": "博物", "color": "#5c2a6a"},
+    "landmark":  {"label": "地标", "color": "#7a3b1a"}
   },
-  "bounds": [
-    [
-      100,
-      14
-    ],
-    [
-      108,
-      21
-    ]
-  ],
+  "bounds": [[100, 14], [108, 22]],
   "points": [
     {
-      "id": "lp-luang-prabang-old-town",
-      "name": "琅勃拉邦古城",
-      "short": "古城",
+      "id": "lp-wat-xieng-thong",
+      "name": "香通寺",
+      "en": "Wat Xieng Thong",
+      "short": "香通寺",
       "days": "Day 1",
-      "type": "heritage",
-      "lnglat": [
-        102.1332,
-        19.8846
-      ],
-      "summary": "清晨布施队伍穿过 Phommatha 路，光西木尼寺的金顶在湄公河雾气里亮起来。",
-      "quote": "Sabaidei，琅勃拉邦的早晨从一碗糯米开始。",
-      "vlog_clip": "vlog-day1-morning",
-      "video_clip": "BV1xxxxxx?t=12",
-      "importance": 5,
-      "works": [
-        "vlog-day1-morning",
-        "Day 1"
-      ],
-      "years": "Day 1"
+      "city": "Luang Prabang",
+      "type": "temple",
+      "lnglat": [102.14306, 19.89750],
+      "summary": "琅勃拉邦最负盛名的寺庙，1560 年塞塔提腊国王所建，金色屋顶低垂到地面，寺内藏有皇家灵车。联合国教科文组织世界遗产。",
+      "quote": "‘Temple of the Golden City’，琅勃拉邦的灵魂所在。",
+      "vlog_clip": "vlog-day1-temple",
+      "video_clip": "BV1xxxxxx?t=320",
+      "importance": 5
     },
     {
-      "id": "lp-mount-phousi",
+      "id": "lp-phou-si",
       "name": "普西山",
+      "en": "Mount Phou Si",
       "short": "普西山",
       "days": "Day 1",
-      "type": "morning",
-      "lnglat": [
-        102.1373,
-        19.8881
-      ],
-      "summary": "328 级台阶登顶，俯瞰湄公河与南康江交汇的半岛。日落时分金光斜照屋瓦。",
+      "city": "Luang Prabang",
+      "type": "landmark",
+      "lnglat": [102.13694, 19.89028],
+      "summary": "老城中心 100m 高的小山，328 级台阶登顶，俯瞰湄公河与南康江交汇。顶峰是金塔 Wat Chom Si，琅勃拉邦最经典日落点。",
       "quote": "站在山顶，琅勃拉邦像一片被河水抱住的琥珀。",
       "vlog_clip": "vlog-day1-dusk",
-      "importance": 4,
-      "works": [
-        "vlog-day1-dusk",
-        "Day 1"
-      ],
-      "years": "Day 1"
+      "importance": 5
     },
     {
-      "id": "lp-kuangsi-falls",
+      "id": "lp-royal-palace",
+      "name": "琅勃拉邦皇宫博物馆",
+      "en": "Royal Palace Museum",
+      "short": "皇宫博物",
+      "days": "Day 1",
+      "city": "Luang Prabang",
+      "type": "museum",
+      "lnglat": [102.13611, 19.88650],
+      "summary": "1904 年西萨旺冯国王建的法式宫殿，1975 年革命后改作博物馆。Phra Bang 金佛、达摩法幢、皇室生活用品都在里面。",
+      "quote": "Phra Bang 金佛给了这座城市名字。",
+      "vlog_clip": "vlog-day1-morning",
+      "importance": 4
+    },
+    {
+      "id": "lp-taec",
+      "name": "传统艺术与民族中心",
+      "en": "TAEC",
+      "short": "TAEC",
+      "days": "Day 1",
+      "city": "Luang Prabang",
+      "type": "museum",
+      "lnglat": [102.13450, 19.88680],
+      "summary": "前殖民时期法官官邸，展示老挝 20+ 个少数民族的服饰、器具与精神信仰。游客少，藏品精，半小时就能看完。",
+      "quote": "老挝不是只有 Lao Loum 这一个民族。",
+      "vlog_clip": "vlog-day1-afternoon",
+      "importance": 3
+    },
+    {
+      "id": "lp-phosi-market",
+      "name": "Phosi Market 早市",
+      "en": "Phosi Market",
+      "short": "Phosi 早市",
+      "days": "Day 1",
+      "city": "Luang Prabang",
+      "type": "morning",
+      "lnglat": [102.13520, 19.88650],
+      "summary": "清晨 5:30 开门，Hmong 高山菜、湄公河鱼、酸笋、香料 — 老挝家常的源头。游客来买纪念品，本地人来买一周的口粮。",
+      "quote": "一碗 khao soi 配糯米饭，从这座早市开始。",
+      "vlog_clip": "vlog-day1-morning",
+      "importance": 3
+    },
+    {
+      "id": "lp-kuang-si",
       "name": "光西瀑布",
+      "en": "Kuang Si Falls",
       "short": "光西瀑布",
       "days": "Day 1",
-      "type": "outdoor",
-      "lnglat": [
-        101.9028,
-        19.7492
-      ],
-      "summary": "城外 30km，钙华池一层一层蓝下来。当地人说夏天最深的水潭有 60m，能跳水。",
+      "city": "Luang Prabang",
+      "type": "nature",
+      "lnglat": [101.9036, 19.7497],
+      "summary": "老城南 29km 的多层钙华瀑布，奶白到翡翠蓝层叠成池。公园里还住着 Free the Bears 救援中心救回来的 150+ 只月熊。",
       "quote": "钙华池的蓝分好几层，最浅的奶白，最深的翡翠。",
       "vlog_clip": "vlog-day1-noon",
-      "importance": 4,
-      "works": [
-        "vlog-day1-noon",
-        "Day 1"
-      ],
-      "years": "Day 1"
+      "video_clip": "BV1xxxxxx?t=1180",
+      "importance": 5
     },
     {
-      "id": "vr-vang-vieng",
-      "name": "万荣",
-      "short": "万荣",
-      "days": "Day 2",
+      "id": "lp-living-land",
+      "name": "Living Land 农场",
+      "en": "Living Land Farm",
+      "short": "Living Land",
+      "days": "Day 1",
+      "city": "Luang Prabang",
       "type": "outdoor",
-      "lnglat": [
-        102.4478,
-        18.9333
-      ],
-      "summary": "喀斯特峰林从稻田里拔起，轮胎漂流、洞穴探洞、攀岩、皮划艇 — 老挝的户外大本营。",
-      "quote": "万荣的山像桂林，但人少十倍，节奏慢两拍。",
-      "vlog_clip": "vlog-day2-outdoor",
-      "video_clip": "BV1xxxxxx?t=1420",
-      "importance": 5,
-      "works": [
-        "vlog-day2-outdoor",
-        "Day 2"
-      ],
-      "years": "Day 2"
+      "lnglat": [101.95280, 19.81150],
+      "summary": "去光西瀑布路上的社区农场，14 步把糯米从田里做到饭桌，包括用自家水牛踩田。最值得一上的老挝烹饪体验。",
+      "quote": "你从此再不会觉得糯米饭理所当然。",
+      "vlog_clip": "vlog-day1-noon",
+      "importance": 3
     },
     {
-      "id": "vr-nam-song-river",
+      "id": "lp-pak-ou",
+      "name": "巴乌石窟",
+      "en": "Pak Ou Caves",
+      "short": "巴乌石窟",
+      "days": "Day 1",
+      "city": "Luang Prabang",
+      "type": "temple",
+      "lnglat": [102.2105, 20.0487],
+      "summary": "湄公河与南乌河交汇处的石灰岩洞穴群，Tham Ting（下洞）和 Tham Theung（上洞）里藏有上千尊大小不一的木佛。乘慢船来回 4 小时。",
+      "quote": "上洞 Tham Theung 的佛像堆到看不清人脸。",
+      "vlog_clip": "vlog-day1-afternoon",
+      "importance": 4
+    },
+    {
+      "id": "lp-night-market",
+      "name": "琅勃拉邦夜市",
+      "en": "Luang Prabang Night Market",
+      "short": "LP 夜市",
+      "days": "Day 1",
+      "city": "Luang Prabang",
+      "type": "night",
+      "lnglat": [102.13320, 19.88580],
+      "summary": "西萨旺冯大街上从 17:00 到 22:30 沿街摆摊，手工灯笼、苗银首饰、Hmong 刺绣围巾 — 不喊价、不还价，逛完不饿也难。",
+      "quote": "夜市的小 ka nom kok 椰奶小饼是隐藏彩蛋。",
+      "vlog_clip": "vlog-day1-night",
+      "importance": 4
+    },
+    {
+      "id": "vv-tham-chang",
+      "name": "长廊石窟",
+      "en": "Tham Chang Cave",
+      "short": "长廊石窟",
+      "days": "Day 2",
+      "city": "Vang Vieng",
+      "type": "temple",
+      "lnglat": [102.4456, 18.9347],
+      "summary": "万荣镇南石灰岩山里的溶洞，洞内钟乳石、石笋、地下河，19 世纪曾是苗族难民的庇护所。爬上山有个蓝色天然泳池。",
+      "quote": "长廊石窟是万荣看喀斯特地貌最便宜的窗口。",
+      "vlog_clip": "vlog-day2-morning",
+      "importance": 4
+    },
+    {
+      "id": "vv-blue-lagoon",
+      "name": "蓝泻湖 1 号",
+      "en": "Blue Lagoon 1",
+      "short": "蓝泻湖",
+      "days": "Day 2",
+      "city": "Vang Vieng",
+      "type": "outdoor",
+      "lnglat": [102.4525, 18.9133],
+      "summary": "万荣西郊 7km 的碧蓝水潭，从树顶跳水绳跳下去是标配。岸边的 bar 卖 Beerlao 和香蕉煎饼。下午 4 点后光最好。",
+      "quote": "蓝泻湖的颜色来自石灰岩水底，不是滤镜。",
+      "vlog_clip": "vlog-day2-noon",
+      "video_clip": "BV1xxxxxx?t=1620",
+      "importance": 5
+    },
+    {
+      "id": "vv-pha-ngern",
+      "name": "Pha Ngern 观景台",
+      "en": "Pha Ngern Viewpoint",
+      "short": "Pha Ngern",
+      "days": "Day 2",
+      "city": "Vang Vieng",
+      "type": "landmark",
+      "lnglat": [102.4630, 18.9520],
+      "summary": "万荣北郊 5km 的悬崖观景台，能俯瞰整片喀斯特峰林与南松河 U 形弯。日落前 1 小时上来，光线最干净。",
+      "quote": "万荣的山像桂林，但人少十倍，节奏慢两拍。",
+      "vlog_clip": "vlog-day2-dusk",
+      "importance": 4
+    },
+    {
+      "id": "vv-nam-song",
       "name": "南松河",
+      "en": "Nam Song River",
       "short": "南松河",
       "days": "Day 2",
+      "city": "Vang Vieng",
       "type": "outdoor",
-      "lnglat": [
-        102.4422,
-        18.9294
-      ],
-      "summary": "午后在轮胎里漂下来，两岸是 ban 村和水牛。岸边的 bar 挂着秋千和绳索。",
+      "lnglat": [102.30167, 18.64500],
+      "summary": "万荣的母亲河，从北向南流过喀斯特峰林，岸边的 ban 村和水牛是漂流时的固定景。租个内胎漂 3km 是经典。",
       "quote": "南松河漂流不是看风景，是成为风景的一部分。",
       "vlog_clip": "vlog-day2-noon",
-      "importance": 4,
-      "works": [
-        "vlog-day2-noon",
-        "Day 2"
-      ],
-      "years": "Day 2"
+      "importance": 4
     },
     {
-      "id": "vi-pakse-bolaven",
-      "name": "波罗芬高原咖啡园",
-      "short": "波罗芬",
-      "days": "Day 3",
-      "type": "morning",
-      "lnglat": [
-        105.8194,
-        15.12
-      ],
-      "summary": "南边波罗芬高原，海拔 1000-1500m，阿拉比卡咖啡带。Day 3 启程南下路过。",
-      "quote": "波罗芬的咖啡有红土和巧克力的余韵。",
-      "vlog_clip": "vlog-day3-morning",
-      "importance": 3,
-      "works": [
-        "vlog-day3-morning",
-        "Day 3"
-      ],
-      "years": "Day 3"
-    },
-    {
-      "id": "vt-vientiane-that-luang",
-      "name": "万象塔銮",
+      "id": "vt-pha-that-luang",
+      "name": "塔銮",
+      "en": "Pha That Luang",
       "short": "塔銮",
       "days": "Day 3",
-      "type": "heritage",
-      "lnglat": [
-        102.6333,
-        17.9583
-      ],
-      "summary": "老挝的国家象征，1566 年塞塔提腊国王建，金色塔身 45m，四周围廊供佛。",
-      "quote": "塔銮的白天和夜景完全两个国家。",
-      "vlog_clip": "vlog-day3-dusk",
-      "importance": 5,
-      "works": [
-        "vlog-day3-dusk",
-        "Day 3"
-      ],
-      "years": "Day 3"
+      "city": "Vientiane",
+      "type": "temple",
+      "lnglat": [102.63425, 17.97617],
+      "summary": "万象的国家象征，1566 年塞塔提腊国王建，金色塔身 45m 收于 30m 方形基座，四周围廊供佛。每年 11 月 That Luang Festival 是老挝新年。",
+      "quote": "塔銮的白天金光、夜里打灯，完全两个国家。",
+      "vlog_clip": "vlog-day3-afternoon",
+      "importance": 5
     },
     {
-      "id": "vt-vientiane-night-market",
-      "name": "万象夜市",
-      "short": "夜市",
+      "id": "vt-patuxai",
+      "name": "凯旋门",
+      "en": "Patuxai",
+      "short": "凯旋门",
       "days": "Day 3",
+      "city": "Vientiane",
+      "type": "landmark",
+      "lnglat": [102.61861, 17.97056],
+      "summary": "1962 年完工的老挝版凯旋门，模仿巴黎凯旋门但塔顶是老挝塔尖，墙面是佛教浮雕。登顶看万象天际线比吴哥窟塔顶便宜。",
+      "quote": "‘垂直的 LAN XANG’，老挝自己的凯旋门。",
+      "vlog_clip": "vlog-day3-morning",
+      "importance": 4
+    },
+    {
+      "id": "vt-wat-si-saket",
+      "name": "西刹吉寺",
+      "en": "Wat Si Saket",
+      "short": "西刹吉寺",
+      "days": "Day 3",
+      "city": "Vientiane",
+      "type": "temple",
+      "lnglat": [102.61167, 17.96306],
+      "summary": "万象最古老的寺庙（1818 年），回廊内嵌数千尊大小佛像，墙面是僧侣讲法的浮雕。是 1828 年战火里少数没被毁的老庙。",
+      "quote": "回廊里的 12000 尊佛像，每一尊都有自己的故事。",
+      "vlog_clip": "vlog-day3-morning",
+      "importance": 4
+    },
+    {
+      "id": "vt-haw-phra-kaew",
+      "name": "玉佛寺",
+      "en": "Haw Phra Kaew",
+      "short": "玉佛寺",
+      "days": "Day 3",
+      "city": "Vientiane",
+      "type": "museum",
+      "lnglat": [102.61167, 17.96139],
+      "summary": "1565 年塞塔提腊王为供奉从清迈抢来的玉佛所建，玉佛 1779 年搬到曼谷后改作博物馆。Lao art 与 Khmer 雕塑的精华。",
+      "quote": "玉佛不在这里，但佛像 200 年的历史还在。",
+      "vlog_clip": "vlog-day3-afternoon",
+      "importance": 3
+    },
+    {
+      "id": "vt-buddha-park",
+      "name": "佛像公园 (Xieng Khuan)",
+      "en": "Buddha Park",
+      "short": "佛像公园",
+      "days": "Day 3",
+      "city": "Vientiane",
+      "type": "landmark",
+      "lnglat": [102.77694, 18.22722],
+      "summary": "万象东南 25km 湄公河畔的雕塑公园，1958 年老挝精神病人 Bunleua Sulilat 造，200+ 座水泥佛教 + 印度教神像混搭，阴间地狱到天堂。",
+      "quote": "阴间三层、地狱洞、佛头塔 — 不像公园，像万象版《山海经》。",
+      "vlog_clip": "vlog-day3-afternoon",
+      "importance": 4
+    },
+    {
+      "id": "vt-cope",
+      "name": "COPE 访客中心",
+      "en": "COPE Visitor Centre",
+      "short": "COPE 中心",
+      "days": "Day 3",
+      "city": "Vientiane",
+      "type": "museum",
+      "lnglat": [102.6154, 17.9623],
+      "summary": "老挝未爆弹药致残的康复中心+博物馆，展出集束炸弹 UXO 实物、受害者假肢、扫雷犬 demo。30 分钟，最有意义的'博物馆'。",
+      "quote": "老挝人均被炸量是世界上最高的，1964-1973 美国投下 2.7 亿枚集束炸弹。",
+      "vlog_clip": "vlog-day3-morning",
+      "importance": 4
+    },
+    {
+      "id": "vt-night-market",
+      "name": "万象夜市",
+      "en": "Vientiane Night Market",
+      "short": "万象夜市",
+      "days": "Day 3",
+      "city": "Vientiane",
       "type": "night",
-      "lnglat": [
-        102.629,
-        17.965
-      ],
-      "summary": "湄公河边的夜市，围巾、灯笼、烤鱼、奥尔良鸡翅 — 老挝的烟火气都堆在这儿。",
+      "lnglat": [102.62920, 17.96580],
+      "summary": "湄公河边沿河大道的夜市，比琅勃拉邦夜市更大、更本地，烤鱼、烤鸡、奥尔良鸡翅、Beerlao 配糯米饭 — 老挝烟火气全堆在这儿。",
       "quote": "万象夜市的烤鱼配糯米饭，是这趟旅行的收尾仪式。",
       "vlog_clip": "vlog-day3-night",
-      "importance": 4,
-      "works": [
-        "vlog-day3-night",
-        "Day 3"
-      ],
-      "years": "Day 3"
+      "importance": 4
     }
-  ],
-  "default": "laos-vlog"
+  ]
 }

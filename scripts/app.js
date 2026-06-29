@@ -320,6 +320,36 @@ function addRouteLayer() {
   });
 }
 
+function addHotels(hotelData) {
+  // 创建住宿数据源
+  map.addSource("hotels", { type: "geojson", data: { type: "FeatureCollection", features: hotelData.points.map(p => ({
+    type: "Feature",
+    geometry: { type: "Point", coordinates: p.lnglat },
+    properties: p
+  })) } });
+  
+  // 添加住宿 marker 图层
+  map.addLayer({
+    id: "hotel-marker",
+    type: "symbol",
+    source: "hotels",
+    layout: {
+      "icon-image": "hotel-icon",
+      "icon-size": 0.8,
+      "text-field": "{name}",
+      "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Regular"],
+      "text-size": 12,
+      "text-offset": [0, 1.5],
+      "text-anchor": "top"
+    },
+    paint: {
+      "text-color": "#2c5282",
+      "text-halo-color": "#ffffff",
+      "text-halo-width": 1
+    }
+  });
+}
+
 function renderMarkers() {
   clearMarkers();
   points.forEach((point, index) => {
@@ -627,6 +657,14 @@ map.on("load", async () => {
     updatePersonSelect(activeJourney.id);
     wireControls();
     drawMist();
+    
+    // 加载住宿数据
+    try {
+      const hotels = await getJson("data/laos-hotels.json");
+      addHotels(hotels);
+    } catch (e) {
+      console.warn("住宿数据加载失败:", e);
+    }
     fitHome(0);
     selectPoint(0, false);
     map.once("render", () => window.setTimeout(setLoaderHidden, 180));

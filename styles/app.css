@@ -420,6 +420,17 @@ button {
   cursor: pointer;
 }
 
+/* 酒店 marker 样式 */
+.hotel-marker {
+  background: #2c5282;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 .journey-marker .flag {
   position: absolute;
   left: 50%;

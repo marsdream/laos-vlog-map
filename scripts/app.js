@@ -347,10 +347,10 @@ function renderTimeline() {
   const timeline = document.getElementById("timeline");
   timeline.innerHTML = points.map((point, index) => `
     <li data-index="${index}">
-      <time>${point.years.split("-")[0]}</time>
+      <time>${point.poi_label || point.years}</time>
       <div>
         <b>${point.name}</b>
-        <span>${typeLabel(point.type)} · ${point.works[0] || "生平节点"}</span>
+        <span>${typeLabel(point.type)} · ${point.poi_label || point.years || "景点"}</span>
       </div>
     </li>
   `).join("");
@@ -363,7 +363,7 @@ function selectPoint(index, fly) {
   activeIndex = (index + points.length) % points.length;
   const point = points[activeIndex];
   const poem = poemForPoint(point);
-  document.getElementById("storyYears").textContent = point.years;
+  document.getElementById("storyYears").textContent = point.poi_label || point.years;
   document.getElementById("storyTitle").textContent = `${point.name} · ${typeLabel(point.type)}`;
   document.getElementById("storyText").textContent = point.summary;
   document.getElementById("storyWorks").innerHTML = point.works.map((work) => `<span>${work}</span>`).join("");
@@ -453,7 +453,7 @@ function renderSearchResults(query) {
   panel.innerHTML = matches.map(({ point, index }) => `
     <button type="button" data-index="${index}">
       <b>${point.name}</b>
-      <span>${typeLabel(point.type)} · ${point.works.join(" / ")}</span>
+      <span>${typeLabel(point.type)} · ${point.poi_label || point.years || "景点"}</span>
     </button>
   `).join("");
   panel.querySelectorAll("button").forEach((button) => {
